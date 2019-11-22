@@ -1,0 +1,30 @@
+<!-- 头部 -->
+<view class='header'>
+  <view class='link'>
+    <navigator class='heart'>
+      <image src='../../images/edit.png'></image>
+    </navigator>
+  </view>
+  <view class='tit'>发现</view>
+</view>
+<image class='color' src='../../images/color.png'></image>
+<!--发现内容 发动态和商城  -->
+<view class="find">
+    <view class="find_wrap">
+        <view class="top">
+            <view>商城</view>
+            <navigator url='../shop/shop'>
+                <image src='../../images/shop.png' mode='widthFix'></image>
+            </navigator>
+        </view>
+        <view class="top">
+            <view>动态</view>
+            <navigator url='../show_me/show_me'>
+                <image src='../../images/show_me.png' mode='widthFix'></image>
+            </navigator>
+        </view>        
+    </view>
+</view>
+
+<import src="../templates/foot"/>
+<template is="foot"></template>

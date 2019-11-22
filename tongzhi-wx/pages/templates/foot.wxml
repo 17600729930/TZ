@@ -1,0 +1,68 @@
+<!-- 底部 -->
+<template name="foot">
+  <view class='footer'>
+  <!-- -------------------------1--------------------------------- -->
+      <view class='item {{ pos==1 ? "on":" " }}'>
+        <navigator url='../index/index'>
+          <view wx:if="{{ pos==1 }}" class='pic'>
+            <image src='../../images/i1-on.png'></image>
+          </view>
+          <view wx:else class='pic'>
+            <image src='../../images/i1.png'></image>
+          </view>
+          <text class='tit'>瞳志</text>
+        </navigator>
+      </view>
+  <!-- ------------------------2--------------------------------- -->
+      <view class='item {{ pos==2 ? "on":" " }}'>
+        <navigator url='../find/find'>
+          <view wx:if="{{ pos==2 }}" class='pic'>
+            <image src='../../images/i2-on.png'></image>
+          </view>
+          <view wx:else class='pic'>
+            <image src='../../images/i2.png'></image>
+          </view>
+          <text class='tit'>发现</text>
+        </navigator>
+      </view>
+  <!-- ------------------------3---------------------------------- -->
+      <view class='item {{ pos==3 ? "on":" " }}'>
+        <navigator url='../news/news'>
+          <view wx:if="{{ pos==3 }}" class='pic'>
+            <image src='../../images/i3-on.png'></image>
+          </view>
+          <view wx:else class='pic'>
+            <image src='../../images/i3.png'></image>
+          </view>
+          <text class='tit'>消息</text>
+          <!-- 消息数量 -->
+          <!-- <text class='num'>99</text> -->
+        </navigator>
+      </view>
+  <!-- -----------------------4--------------------------------- -->
+      <view class='item {{ pos==4 ? "on":" " }}'>
+        <navigator url='../video/video'>
+          <view wx:if="{{ pos==4 }}" class='pic'>
+            <image src='../../images/i4-on.png'></image>
+          </view>
+          <view wx:else class='pic'>
+            <image src='../../images/i4.png'></image>
+          </view>
+          <text class='tit'>视频</text>
+        </navigator>
+      </view>
+  <!-- -----------------------5--------------------------------- -->
+    <view class='item {{ pos==5 ? "on":" " }}'>
+      <navigator url='../center/center'>
+        <view wx:if="{{ pos==5 }}" class='pic'>
+          <image src='../../images/i5-on.png'></image>
+        </view>
+        <view wx:else class='pic'>
+          <image src='../../images/i5.png'></image>
+        </view>
+        <text class='tit'>我</text>
+      </navigator>
+    </view>
+  <!-- ------------------------------------------------------------ -->
+  </view>
+</template>

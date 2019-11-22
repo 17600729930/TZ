@@ -1,0 +1,45 @@
+.form{
+  width: 100%;
+}
+.form .form_wrap{
+  width: 98%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.form .form_wrap form{
+  width: 98%;
+  margin: 0 auto;
+}
+.form .form_wrap form textarea{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  height: 400rpx;
+  padding: 20rpx;
+}
+.form .form_wrap .bot{
+  width: 100%;
+  background: #f9f9f9;
+  display: flex;
+  padding: 15rpx 0;
+  justify-content: space-between;
+}
+.form .form_wrap .bot .left,.form .form_wrap .bot .right{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .form_wrap .bot .left image{
+  width: 40rpx;
+}
+.form .form_wrap .bot .right button{
+  border: none;
+  background: #ff6906;
+  color: #fff;
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+}

@@ -1,0 +1,22 @@
+<!--商场礼物  -->
+<view class='shop'>
+    <view class='shop_wrap'>
+        <view class="shop_list">
+            <block wx:for="{{shopList}}" wx:key="shop">
+                <navigator url=''>
+                    <view class="top_img">
+                        <image src='../../images/liwu-1.png'></image>
+                    </view>
+                    <view class='middle_img'>
+                        <image src='{{item.imgUrl}}'></image>
+                    </view>
+                    <view class='bottom_info'>
+                        <text class="tit">{{item.title}}</text>
+                        <view>{{item.price}}<text class="money">￥</text></view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>
+

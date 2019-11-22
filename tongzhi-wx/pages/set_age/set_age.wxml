@@ -1,0 +1,17 @@
+<view class="set">
+    <view class="set_wrap">
+        <form>
+            <label>
+                <text>年龄:</text>
+                <input type='text' value='20'></input>
+            </label>
+            <label>
+                <text>公开我的年龄:</text>
+                <switch></switch>
+            </label>
+            <view class='btn'>
+                <button type='warn'>完成</button>
+            </view>  
+        </form> 
+    </view>
+</view>

@@ -1,0 +1,72 @@
+<view class="video_wrap">
+    <view class='video_box'>
+        <video src='' bindtap="modalcnt"></video>
+    </view>
+    <view class='video_info'>
+        <view class="left">
+            <view class="face">
+              <image src='../../images/face1.png'></image>
+            </view>
+            <view class='info'>
+              <view class='name'>忧郁小哥</view>
+              <view class="name_fa">视频发布者</view> 
+            </view>
+        </view>
+        <view class="right">
+            <text>11-17</text>
+            <text>02:10</text>
+        </view> 
+    </view>
+    <view class="video_like">
+        <view class='like_wrap'>
+            <image src='../../images/heart.png' ></image>
+            <text>1</text>
+        </view>
+        <view class='like_wrap'>
+            <image src='../../images/icos-2.png' ></image>
+        </view>
+    </view>
+    <view class='video_info'>
+        <view class="left">
+            <view class="face">
+              <image src='../../images/face2.png'></image>
+            </view>
+        </view>
+        <view class="right">
+            <text>1人很赞</text>
+            <navigator> > </navigator>            
+        </view> 
+    </view>
+    <view class="video_talk">
+        <view class='talk_top'>
+            <text>评论(1)</text>
+        </view>
+        <view class='video_info'>
+          <view class="left">
+              <view class="face">
+                <image src='../../images/face1.png'></image>
+              </view>
+              <view class='info'>
+                <view class='name'>评论者名称:某某某</view>
+                <view class="name_fa">评论者的评论，，，</view> 
+              </view>
+          </view>
+          <view class="right">
+              <text>11-17</text>
+              <text>02:10</text>
+          </view> 
+      </view>
+    </view>
+    <view class="video_talk">
+        <view class='talk_top'>
+            <text>看了又看</text>
+        </view>
+        <view class='video_w'>
+            <view class="video_box" wx:for="{{videoList}}" wx:key="video">
+                <video src='{{item.src}}' object-fit="cover" controls="true" show-play-btn="false" bindprogress="10%" poster="{{item.postUrl}}"></video>
+                <navigator class='title' url='../video_info/video_info'>{{item.title}}</navigator>
+                <view class='view'>播放次数:{{item.view}}</view>
+            </view>
+        </view>
+    </view>
+</view>

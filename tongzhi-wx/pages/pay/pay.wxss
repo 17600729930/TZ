@@ -1,0 +1,76 @@
+.wrap{
+  width: 100%;
+  padding: 30rpx 0 0;
+  background:#f6f7fa;
+  box-sizing: border-box;
+}
+.wrap .pay{
+  width: 96%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40rpx 20rpx;
+  text-align: center;
+}
+.wrap .pay .price{
+  font-size: 36rpx;
+  color: #ff6906;
+}
+.wrap .pay .money{
+  margin-top: 15rpx;
+  color: #ff6906;
+  font-size: 36rpx;
+}
+.wrap .pay .money text{
+  font-size: 60rpx;
+}
+.wrap .pay .pay_money{
+  margin-top: 15rpx;
+  color: #bfbdc7;
+  font-size: 36rpx;
+}
+.wrap .pay .pay_money text{
+  margin-left: 10rpx;
+}
+.wrap .pay .info{
+  margin-top: 15rpx;
+  color: #333;
+  font-size: 36rpx;
+}
+.wrap .pay .info text{
+  margin-left: 10rpx;  
+}
+.wrap .pay_use{
+  width:96%;
+  box-sizing:border-box;
+  margin:0 auto;
+  background:#fff;
+  padding:40rpx 20rpx;
+}
+.wrap .pay_use .pay_tit{
+  color: #c2c0ca;
+  font-size: 30rpx;
+}
+.wrap .pay_use form{
+  display:block;
+  width: 100%;
+}
+.wrap .pay_use label{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.wrap .pay_use label radio{}
+.wrap .pay_use label image{
+  width: 48rpx;
+}
+.wrap .pay_use label text{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.wrap .btn{
+  width: 95%;
+  margin: 30rpx auto;
+}

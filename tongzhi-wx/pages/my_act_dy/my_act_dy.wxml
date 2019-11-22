@@ -1,0 +1,187 @@
+<!-- 头部 -->
+<view class='header'>
+  <view class='link'>
+    <navigator class='heart'>
+      <image src='../../images/edit.png'></image>
+    </navigator>
+  </view>
+  <view class='tit'>发现</view>
+</view>
+<image class='color' src='../../images/color.png'></image>
+
+<!--主页内容  -->
+<view class="main">
+    <view class="user_wrap">
+        <block wx:for="{{userList}}" wx:key="{{foot}}">
+            <view class="user_item">
+                <view class="item_top">
+                    <view class="wrap">
+                        <navigator url='' class="left">
+                            <view class="user_img">
+                                <image src="{{item.face}}"></image>
+                            </view>
+                            <view class="user_info">
+                                <navigator class="user_name">
+                                    <view class="name">{{item.name}}</view>
+                                </navigator>
+                                <view class="user_time">{{item.time}}</view>
+                            </view>
+                        </navigator>
+                        <view class="viewed">
+                            <image src="../../images/viewed.png"></image>
+                            <view class="view_num">{{item.view}}人</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="item_bottom">
+                    <swiper class="img_wrap">
+                        <block wx:for="{{srcUrl}}">
+                          <swiper-item class="img_box">
+                              <view class="">
+                                  <image src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+                              </view>
+                          </swiper-item>
+                        </block>
+                               
+                    </swiper>
+
+                    <view class="user_con">
+                        <navigator url=''>{{item.content}}</navigator>
+                    </view>
+                    <view class="user_more">
+                        <view class="area">
+                            <image src='../../images/map.png'></image>
+                            <text>{{item.map}}</text>  
+                        </view>
+                        <view class="icos">
+                            <navigator class="ico_like icos_com">
+                                <image src='../../images/icos-1.png'></image>
+                            </navigator>
+                            <navigator class="ico_lun icos_com" url='../talk/talk'>
+                                <image src='../../images/icos-2.png'></image>                                
+                            </navigator>
+                            <navigator class="ico_meony icos_com">
+                                <image src='../../images/icos-3.png' bindtap='closeHide'></image>                                
+                            </navigator>
+                        </view>
+                        <view class='right' style='text-align:right;flex:1;'>
+                            <image src='../../images/ico-40.png' mode='widthFix' bindtap='sureDel'></image>
+                        </view>
+                    </view>
+                </view> 
+            </view>
+            <!--评论区域  -->
+            <view class="user_comment">
+                 <view class="left">
+                      <view class="comment_img">
+                          <navigator>
+                               <image src='../../images/face3.png'></image>
+                          </navigator>
+                          <navigator>
+                               <image src='../../images/face4.png'></image>
+                          </navigator>
+                      </view>
+                 </view>
+                 <view class='right'>
+                      <view class="comment_more">
+                          <text>2人点赞</text>
+                          <image src='../../images/ico-right.png'></image>
+                      </view>
+                 </view>
+            </view>
+            <!--评论  -->
+            <view class="user_write">
+                <view class="write_top">
+                    <text class='{{currentData == 0 ? "active":""}}' data-current = "0" bindtap='checkCurrent'>评论</text>
+                    <text class='{{currentData == 1 ? "active":""}}' data-current = "1" bindtap='checkCurrent'>打赏</text>                    
+                </view>
+                <swiper current="{{currentData}}" duration="300" bindchange="bindchange">
+                    <swiper-item>
+                        <view class="write_middle">
+                            <navigator class="left" url='../user_home/user_home'>
+                                <image src='../../images/face3.png'></image>
+                            </navigator>
+                            <view class="right">
+                                <navigator>会说话的鱼</navigator>
+                                <text class="write_con">你好，请加我的微信号，wx123123123</text>
+                                <view class="write_time">02-29</view>
+                            </view>
+                        </view>
+                    </swiper-item>
+                    <swiper-item  class="">
+                        <view class='write_middle'>
+                            <navigator class="left" url='../user_home/user_home'>
+                                <image src='../../images/face3.png'></image>
+                            </navigator>
+                            <view class="right">
+                                <navigator>会说话的鱼</navigator>
+                                <text class="write_con">打赏了你3个金币</text>
+                                <view class="write_time">02-29</view>
+                            </view>
+                        </view>
+                    </swiper-item>
+                                        
+                </swiper>
+            </view>
+        </block>
+    </view>
+</view>
+
+<!--悬浮层  -->
+<view class='cover' hidden="{{hiddenName}}">
+    <view class="cover_wrap">
+        <view class="middle_box">
+            <view class='wrap'>
+                <form>
+                    <view class="top">
+                        <image src='../../images/face1.png'></image>
+                        <view class="text">喜欢就赞赏我把!</view>
+                    </view>
+                    <view class="middle">
+                        <view class="select_top">
+                            <radio-group>
+                                <radio>5￥</radio>
+                                <radio>6￥</radio>
+                                <radio>8￥</radio>
+                            </radio-group>  
+                        </view>
+                        <view class='select_bottom'>
+                            <label>
+                                <input type='number' placeholder='请输入其他金额' placeholder-style='color:#c5c4ca;font-size:28rpx;'></input>
+                            </label>  
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <view class="left">
+                            <text class="meony">账户余额: 9527</text>
+                            <text class="meony_ico">￥</text>
+                        </view>
+                        <view class="right">
+                            <navigator url='../my_count/my_count'>充值</navigator>
+                        </view> 
+                    </view>
+                    <view class="btn">
+                        <button>打赏</button>
+                    </view>
+                </form>
+                
+
+            </view>
+        </view>
+        <view class='close_btn'>
+            <text bindtap="closeHide">╳</text>
+        </view>
+    </view>
+</view>
+
+<!-- 输入框 -->
+<view class='cover' hidden="{{hiddenInput}}">
+    <view class='input_wrap'>
+        <form>
+            <textarea placeholder='请输入要评论的内容' placeholder-style='color:#333;font-size:26rpx;'></textarea>
+        </form>
+    </view>
+</view>
+
+<import src="../templates/foot"/>
+<template is="foot"></template>
