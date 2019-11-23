@@ -1,0 +1,21 @@
+<!-- 头部 -->
+<view class='header'>
+  <view class='tit'>消息</view>
+</view>
+
+<view class='news'>
+    <view class='wrap'>
+        <navigator class='new_list' wx:for="{{newsList}}" wx:key="news" url='../news_more/news_more'>
+            <view class='left'>
+                <image src='{{item.face}}'></image>
+            </view>
+            <navigator class='middle'>
+                <view class='name_t'>
+                    <text class="name">{{item.name}}</text>
+                    <text class="time">{{item.time}}</text>
+                </view>
+                <view class='con'>{{item.con}}</view>
+            </navigator>
+        </navigator>
+    </view>
+</view>

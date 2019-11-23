@@ -1,0 +1,152 @@
+
+.news{
+  width: 100%;
+  box-sizing:border-box;
+  padding: 18rpx;
+  margin-bottom: 100rpx;
+}
+.news .wrap{
+  width: 100%;
+}
+.news .wrap .top_tab{
+  width: 100%;
+  height: 90rpx;
+  background: #ff6906;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 20rpx;
+}
+.news .wrap .top_tab .left{
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.news .wrap .top_tab .left image{
+  width:38rpx; 
+  margin-left: 30rpx;
+}
+.news .wrap .top_tab .left text{
+  font-size: 32rpx;
+  color: #fff;
+  margin-left: 20rpx;
+}
+.news .wrap .top_tab .right{
+  width: 10%;
+}
+.news .wrap .top_tab .right image{
+  width: 30rpx;
+}
+
+.news .wrap .new_list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10rpx 0;
+}
+.news .wrap .new_list .left{
+  border-radius: 100%;
+  width: 121rpx;
+  height: 121rpx;
+}
+.news .wrap .new_list .left image{
+  width: 121rpx;
+  height: 121rpx;
+}
+.news .wrap .new_list .middle{
+  width: 80%;
+  padding-left: 20rpx;
+}
+.news .wrap .new_list .middle .name_t{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.news .wrap .new_list .middle .name_t .name{
+  font-size: 32rpx;
+}
+.news .wrap .new_list .middle .name_t .time{
+  font-size: 32rpx;
+  color: #c2c1cb;
+}
+.news .wrap .new_list .middle .con{
+  overflow: hidden;
+  width: 80%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #c2c1cb;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*新添加选项卡  */
+.phone_personal{
+    width: 100%;
+    padding-left: 80rpx;
+    color:rgb(34, 154, 181);
+    height:100rpx;
+    line-height:100rpx;
+    text-align: left;
+    color: #fff;
+    font-size: 32rpx;
+}
+.phone_one{
+    display: flex; 
+    position: relative;
+    justify-content: space-between;
+    background-color:#ff6805;
+    width:100%;
+    height:100rpx;
+    margin:0 auto;
+    border-bottom:2rpx solid rgb(255, 255, 255);
+}
+.person_box{
+    position: relative;
+    width:100%;
+}
+.phone_select{
+    width:100%;
+    margin-top:0;
+    z-index: 100;
+    position: absolute;
+}
+.select_one{
+    width: 100%;
+    text-align: center;
+    background-color:#ff6906;
+    height:80rpx;
+    color: #fff;
+    font-size: 32rpx;
+    line-height:80rpx;
+    border-bottom:2rpx solid rgb(255, 255, 255);
+}
+.left_img{
+    z-index: 100;
+    position: absolute;
+    left: 2.5%;
+    top: 23%;
+    width: 50rpx;
+    height: 50rpx;
+}
+.personal_image{
+    z-index: 100;
+    position: absolute;
+    right:2.5%;
+    width: 34rpx;
+    height: 20rpx;
+    margin:40rpx 20rpx 40rpx 0;
+    transition: All 0.4s ease;  
+    -webkit-transition: All 0.4s ease;
+}
+.rotateRight{
+    transform: rotate(180deg);
+}
+page{
+  height: 100%;
+}
+page swiper{
+  height: 100%;
+}

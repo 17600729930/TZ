@@ -1,0 +1,73 @@
+<view class="center">
+    <view class="center-wrap">
+        <view class="top">
+            <view class='top_wrap'>
+                <view class="left">
+                    <text>瞳志</text>
+                </view>
+                <view class="right" bindtap="handelUserClick">
+                    <image src='../../images/center-1.png' mode='widthFix'></image>
+                </view>
+            </view>
+            <view class='center_info'>
+                <!-- <navigator class='info_wrap' url='../center/center'> -->
+                <!-- <navigator class='info_wrap'>
+                    <view class='user_img'>
+                        <image src='../../images/face1.png'></image>
+                    </view>
+                    <view class='user_info'>
+                        <view class='name'>周颖</view>
+                        <view class='num'>瞳志号:1234557</view>
+                    </view> -->
+                    <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="tz_cls">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="tzNum">瞳志号：{{tzNum}}</text>
+      </view>
+    </block>
+  </view>
+                <!-- </navigator> -->
+            </view>
+        </view>
+    </view>
+    <view class="sanlian">
+        <view class='sanlian_wrap'>
+            <view class="sanlian_list">
+                <navigator class='sanlian_item' url='../hudong/hudong'>
+                    <image src='../../images/good.png'></image>
+                    <text class='num'>0</text>
+                    <text class='zi'>点赞</text>
+                </navigator>
+                <navigator class='sanlian_item' url='../my_count/my_count'>
+                    <image src='../../images/good-1.png'></image>
+                    <text class='num'>0</text>
+                    <text class='zi'>金币</text>
+                </navigator>
+                <navigator class='sanlian_item' url='../hudong/hudong'>
+                    <image src='../../images/good-2.png'></image>
+                    <text class='num'>0</text>
+                    <text class='zi'>打赏</text>
+                </navigator>
+            </view>
+        </view> 
+    </view>
+    <view class='user_list'>
+        <view class="user_wrap">
+            <block wx:for="{{userList}}" wx:key="userList">
+                <view class="user_item">
+                    <navigator class="left" url='{{item.url}}'>
+                        <image src='{{item.icoImg}}' mode='widthFix'></image>
+                        <text>{{item.name}}</text>
+                        <text class='num'>{{item.num}}</text>
+                    </navigator>
+                    <navigator class="right" url='{{item.url}}'>
+                        <image src='../../images/ico-right.png'></image>
+                    </navigator>                
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

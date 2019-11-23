@@ -1,0 +1,150 @@
+/* 头部 */
+.header{
+  overflow: hidden;
+  height: 120rpx;
+  background-color: #fff;
+}
+.header .tit{
+  line-height: 120rpx;
+  color: #363636;
+  font-size: 47rpx;
+  padding-left: 30rpx;
+  overflow: hidden;
+  letter-spacing: 5rpx;
+}
+.count{
+  width: 100%;
+  margin-bottom: 100rpx;
+}
+.count .count_wrap{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20rpx;
+}
+.count .count_wrap .count_top{
+  wdith:100%;
+  position: relative;
+}
+.count .count_wrap .count_top image{
+  width: 100%;
+}
+.count .count_wrap .count_top .count_info{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.count .count_wrap .count_top .count_info .tit{
+  font-size: 40rpx;
+}
+.count .count_wrap .count_top .count_info .num{
+  font-size: 70rpx;
+  font-weight: 700;
+  margin-top: 20rpx;
+}
+.count .count_wrap .count_cao{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f6f7fa;
+  padding: 20rpx 0;
+}
+.count .count_wrap .count_cao .left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count .count_wrap .count_cao .left image{
+  width: 40rpx;
+}
+.count .count_wrap .count_cao .left text{
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+.count .count_wrap .count_chong{
+  width: 100%;
+}
+.count .count_wrap .count_chong .tit{
+  font-size: 32rpx;
+  text-align: center;
+  margin: 20rpx 0;
+}
+.count .count_wrap .count_chong .chong_list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.count .count_wrap .count_chong .chong_list .chong_item{
+  width: 48%;
+  padding:10rpx 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #e5e4e8;
+  border-radius: 3px;
+  margin-top: 14rpx;
+}
+.count .count_wrap .count_chong .chong_list .active{
+  border-color: #f27422;
+  background: #fef8eb;
+}
+.count .count_wrap .count_chong .chong_list .chong_item .num{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.count .count_wrap .count_chong .chong_list .chong_item .num text{
+  background: #fcbf32;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 100%;
+  padding: 0 4rpx;
+  font-weight: 400;
+}
+.count .count_wrap .count_chong .chong_list .chong_item .price{
+  font-size: 32rpx;
+  color: #e4d6b7;
+  margin-top: 20rpx;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer .wrap{
+  width: 100%;
+  height: 100rpx;
+  background: #f9faf9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .wrap .left{
+  width: 70%;
+}
+.footer .wrap .left view{
+  font-size: 40rpx;
+  font-weight: 700;
+  text-indent: 30rpx;
+}
+.footer .wrap .left view text{
+  font-size: 36rpx;
+}
+.footer .wrap .right{
+  width: 30%;
+  height: 100%;
+}
+.footer .wrap .right navigator{
+  background: #ff6906;
+  color: #fff;
+  font-size: 34rpx;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+}

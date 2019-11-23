@@ -1,0 +1,26 @@
+<view class="set">
+    <view class="set_wrap">
+        <form>
+            <label>
+                <text>姓名:</text>
+                <input type='text'></input>
+            </label>
+            <label>
+                <text>手机号:</text>
+                <input type='numberd'></input>
+            </label> 
+            <label>
+                <text>支付宝账号:</text>
+                <input type='text'></input>
+            </label>
+            <label>
+                <text>提现金额:</text>
+                <input type='text'></input>
+            </label>
+            <view class='tip'>请确认手机号和支付宝账号无误</view>
+            <view class='btn'>
+                <button type='warn'>完成</button>
+            </view>  
+        </form> 
+    </view>
+</view>

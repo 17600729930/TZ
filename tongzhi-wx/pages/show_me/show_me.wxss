@@ -1,0 +1,80 @@
+.form{
+  width: 100%;
+}
+.form .form_wrap{
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.form .form_wrap form{
+  width: 100%;
+}
+.form .form_wrap form textarea{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.form .form_wrap form .upfile{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+}
+.form .form_wrap form .upfile button{
+  width: 150rpx;
+  min-width: 150rpx;
+  height: 150rpx;
+  font-size: 76rpx;
+  line-height: 140rpx;
+  background: #f5f6fb;
+  border: none;
+  box-sizing: border-box;
+  position:static;
+  padding:0;
+  color: #b1bcd2;
+  border-radius: 3px;
+  margin-right: 10rpx;
+  margin-left: 0;
+}
+.form .form_wrap form .map{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.form .form_wrap form .map .text{
+  font-size: 28rpx;
+  color: #6f88f6;
+}
+.form .form_wrap form .map button{
+  margin: 0;
+  background: #cbcd62;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 3px;
+  padding: 0 20rpx;
+}
+
+/* 图片上传预览 */
+.pic {
+box-sizing: border-box;
+width:25%;
+padding: 10rpx;
+position:relative;
+}
+.pic image{
+  max-width:100%;
+  max-height:150rpx;
+
+}
+.delete-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pic_box{
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,20 @@
+/* pages/set_help/set_help.wxss */
+.wrap{
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box
+}
+.help_tit{
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+.help_con{
+  margin-top: 20rpx;
+  color:#666;
+  font-size: 14px;
+}
+.help_con text{
+  line-height: 50rpx;
+  text-indent: 30px;
+}

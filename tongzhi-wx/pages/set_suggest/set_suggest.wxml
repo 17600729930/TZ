@@ -1,0 +1,12 @@
+<view class="set">
+    <view class="set_wrap">
+        <form>
+            <label>
+                <textarea placeholder='请提出您宝贵的意见和建议，瞳志的成长离不开您的支持...' placeholder-style='font-size:30rpx;'></textarea>
+            </label>
+            <view class='btn'>
+                <button type='warn'>完成</button>
+            </view>  
+        </form> 
+    </view>
+</view>

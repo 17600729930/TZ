@@ -1,0 +1,13 @@
+<view class="set">
+    <view class="set_wrap">
+        <form>
+            <label>
+                <text>选择您的学历:</text>
+                <input type='text'></input>
+            </label>
+            <view class='btn'>
+                <button type='warn'>完成</button>
+            </view>  
+        </form> 
+    </view>
+</view>

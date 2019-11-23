@@ -1,0 +1,18 @@
+<!--发布动态  -->
+<view class='form'>
+    <view class="form_wrap">
+        <form>
+            <!--内容框  -->
+            <textarea placeholder='想说点什么~' placeholder-style="font-size:28rpx;color:#bfbdc8;" maxlength="599"></textarea>
+            <view class='bot'>
+                <view class='left'>
+                    <image src='../../images/ico-27.png' mode='widthFix'></image>
+                </view>
+                <view class='right'>
+                    <button>发送</button>
+                </view>                
+            </view>
+        </form>
+    </view>
+</view>
+

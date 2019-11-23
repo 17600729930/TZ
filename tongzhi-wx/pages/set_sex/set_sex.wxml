@@ -1,0 +1,19 @@
+<view class="set">
+    <view class="set_wrap">
+        <form>
+            <label>
+                <text>选择您的性别:</text>
+                <input type='text' bindtap="actionSheetTap" value='{{menu}}'></input>
+            </label>
+            <view class='btn'>
+                <button type='warn'>完成</button>
+            </view>  
+        </form> 
+    </view>
+</view>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

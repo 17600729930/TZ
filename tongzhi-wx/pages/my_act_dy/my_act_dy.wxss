@@ -1,0 +1,503 @@
+.header{
+  overflow: hidden;
+  height: 120rpx;
+  background-color: #fff;
+}
+.header .tit{
+  line-height: 120rpx;
+  color: #363636;
+  font-size: 47rpx;
+  padding-left: 30rpx;
+  overflow: hidden;
+  letter-spacing: 5rpx;
+}
+.header .link{
+  float: right;
+  overflow: hidden;
+  margin-right: 10rpx;
+}
+.header .link navigator{
+  display: block;
+  float: left;
+  width: 80rpx;
+  height: 120rpx;
+}
+.header .link navigator image{
+  display: block;
+  width:35rpx;
+  height:35rpx;
+  margin: 40rpx auto 0;
+}
+.color{
+  display: block;
+  width: 100%;
+  height: 3px;
+}
+/*主页内容  */
+.main{
+  background-color: #f5f6fb;
+  padding-top: 18rpx;
+}
+.main .user_wrap{
+  width: 100%;
+  background: #f2f2f2;
+  margin-bottom: 112rpx;
+}
+.main .user_wrap .user_item{
+  width: 100%;
+  padding: 0 18rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.main .user_wrap .user_item .item_top{
+  width: 100%;
+}
+.main .item_top .wrap{
+  width: 100%;
+  display: flex;
+  padding:18rpx 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .item_top .wrap .left{
+  display: flex;
+}
+.main .item_top .wrap .user_img{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 50%;
+}
+.main .item_top .wrap .user_img image{
+  width: 100%;
+  height: 100%;
+  max-width: 121rpx;
+}
+.main .item_top .wrap .user_info{
+  margin-left: 26rpx;
+}
+.main .item_top .wrap .user_info .user_name{
+  margin: 10rpx 0;
+}
+.main .item_top .wrap .user_info .user_name .name{
+  font-size:36rpx;
+}
+.main .item_top .wrap .user_info .user_time{
+  font-size:28rpx;
+  color: #bdbcc1;
+}
+.main .item_top .wrap .viewed{
+  width:160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.main .item_top .wrap .viewed image{
+  width: 45rpx;
+  height: 30rpx;
+}
+.main .item_top .wrap .viewed .view_num{
+  color: #bdbcc1;
+  font-size: 28rpx;
+}
+.main .user_wrap .user_item .item_bottom{
+  width: 100%;
+}
+.main .item_bottom .img_wrap{
+  min-height: 340rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .item_bottom .img_wrap swiper{
+  width: 100%;
+}
+.main .item_bottom .img_wrap .img_box{
+  width: 50% !important;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.main .item_bottom .img_wrap .img_box image{
+  width: 100%;
+  max-height: 340rpx;
+  max-width: 100%;
+}
+.main .item_bottom .user_con{
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.main .item_bottom .user_con navigator{
+  font-size: 36rpx;
+}
+.main .item_bottom .user_more{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  padding:20rpx 0 30rpx 0;
+}
+.main .item_bottom .user_more .area{
+  background: #f5f6fb;
+  border-radius: 6rpx;
+  padding:6rpx 30rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #8c90a5;
+}
+.main .item_bottom .user_more .area image{
+  width: 26rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.main .item_bottom .user_more .icos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .item_bottom .user_more .icos .icos_com{
+  width: 42rpx;
+  height: 41rpx;
+  margin-left: 40rpx;
+}
+.main .item_bottom .user_more .icos .icos_com image{
+  width: 100%;
+  height: 100%;
+}
+/*评论区域  */
+.main .user_comment{
+  width:100%;
+  padding:0 18rpx;
+  box-sizing:border-box;
+  background:#fff;
+  margin-bottom:20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .user_comment .left{
+  width: 80%;
+  padding: 20rpx 0;
+
+}
+.main .user_comment .left .comment_img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main .user_comment .left .comment_img navigator{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.main .user_comment .left .comment_img navigator image{
+  width: 100%;
+  height: 100%;
+}
+.main .user_comment .right{
+  width: 20%;
+}
+.main .user_comment .right .comment_more{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main .user_comment .right .comment_more text{
+  font-size:30rpx;
+  color: #ddd;
+  margin-right: 10rpx;
+}
+.main .user_comment .right .comment_more image{
+  width: 20rpx;
+  height: 34rpx;
+}
+.main .user_write{
+  width: 100%;
+  padding: 0 18rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.main .user_write .write_top{
+  width: 100%;
+  padding: 16rpx 0;
+  font-size: 32rpx;
+}
+.main .user_write .write_middle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main .user_write .left{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 100%;
+}
+.main .user_write .left image{
+  width: 100%;
+  height: 100%;
+}
+.main .user_write .right{
+  width: 80%;
+  margin-left: 20rpx;
+}
+.main .user_write .right navigator{
+  width: 100%;
+  font-size: 32rpx;
+  color: #000;
+}
+.main .user_write .right .write_con{
+  font-size: 28rpx;
+  display: block;
+  width: 100%;
+  color: #666;
+  margin-top: 12rpx;
+}
+.main .user_write .right .write_time{
+  font-size: 24rpx;
+  color: #a7a7a7;
+  margin-top: 12rpx;  
+}
+
+/*悬浮层  */
+.cover{
+  width: 100%;
+  height: 100%;
+}
+.cover .cover_wrap{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.cover .middle_box{
+  width: 65%;
+  margin: 30% auto 0;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.cover .close_btn{
+  margin-top: 40rpx;
+  text-align: center;
+}
+.cover .close_btn text{
+  color: #fff;
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border: 1px solid #fff;
+  line-height: 50rpx;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.cover .middle_box .wrap{
+  width: 100%;
+  box-sizing: border-box;
+  padding:20rpx 20rpx 56rpx 20rpx;
+}
+.cover .middle_box .wrap .top{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rpx 0;
+}
+.cover .middle_box .wrap .top image{
+  width: 121rpx;
+  height: 121rpx;
+}
+.cover .middle_box .wrap .top .text{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.cover .wrap .middle{
+  width: 100%;
+}
+.cover .wrap .middle form{
+  width: 100%;
+}
+.cover .middle .select_top{
+  width: 90%;
+  margin: 20rpx auto 0;
+}
+.cover .middle .select_top radio-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cover .middle .select_top radio-group radio{
+  border:1px #f2f2f2 solid;
+  color: #ff6805;
+  font-size: 28rpx;
+  padding:6rpx 24rpx;
+  border-radius: 6rpx;  
+}
+ .cover .middle .select_top radio-group radio .wx-radio-input{
+   display: none; 
+} 
+.cover .middle .select_top radio-group radio .wx-radio-input.wx-radio-input-checked{
+  background: #ff6805;
+  color: #fff;
+}
+.cover .middle .select_bottom{
+  width: 90%;
+  margin: 30rpx auto 0;
+}
+.cover .middle .select_bottom label{
+  width: 100%;
+}
+.cover .middle .select_bottom label input{
+  text-align: center;
+  font-size: 30rpx;
+  border: 1px solid #f2f2f2;
+  padding: 8rpx 0;
+}
+.cover .bottom{
+  width: 90%;
+  margin: 30rpx auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cover .bottom .left{
+  width: 80%;
+}
+.cover .bottom .left .meony{
+  font-size: 28rpx;
+}
+.cover .bottom .left .meony_ico{
+  background: #ff6805;
+  color: #fff;
+  padding: 0 4rpx;
+  font-size: 28rpx;
+  border-radius: 100%;
+  margin-left: 20rpx;
+}
+.cover .bottom .right{
+  width: 20%;
+  text-align: center;
+}
+.cover .bottom .right navigator{
+  font-size: 28rpx;
+  color: #ff6805;
+}
+.cover .btn{
+  width: 90%;
+  margin: 30rpx auto 0;
+}
+.cover .btn button{
+  font-size: 30rpx;
+  background: #ff6805;
+  color: #fff;
+}
+
+/* 输入框位置 */
+.input_wrap{
+
+  width: 100%;
+  position: fixed;
+  bottom: 112rpx;
+  left: 0;
+}
+.input_wrap form{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  min-height: 100rpx;
+  max-height: 300rpx;
+  overflow: scroll;
+  padding: 20rpx 0;
+  background: #fff;
+}
+.input_wrap form textarea{
+  width: 96%;
+  min-width: 320px;
+  max-height: 120rpx;
+  margin: 0 auto;
+  background: #f4f5fa;
+  text-indent: 20rpx;
+  padding: 10rpx 0;
+}
+
+.main .user_write{
+  width: 100%;
+  padding: 0 18rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.main .user_write swiper{
+  min-height:250px;
+}
+.main .user_write .write_top{
+  width: 100%;
+  padding: 16rpx 0;
+  font-size: 32rpx;
+}
+.main .user_write .write_top text{
+  margin-right: 20rpx;
+  color: #000;
+  font-size: 32rpx;
+}
+.main .user_write .write_top text.active{
+  font-weight: 600;
+}
+.main .user_write .write_middle{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main .user_write .left{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 100%;
+}
+.main .item_bottom .user_more .right{
+  
+}
+.main .item_bottom .user_more .right image{
+  width: 50rpx;
+}
+.main .user_write .left image{
+  width: 100%;
+  height: 100%;
+}
+.main .user_write .right{
+  width: 80%;
+  margin-left: 20rpx;
+}
+.main .user_write .right navigator{
+  width: 100%;
+  font-size: 32rpx;
+  color: #000;
+}
+.main .user_write .right .write_con{
+  font-size: 28rpx;
+  display: block;
+  width: 100%;
+  color: #666;
+  margin-top: 12rpx;
+}
+.main .user_write .right .write_time{
+  font-size: 24rpx;
+  color: #a7a7a7;
+  margin-top: 12rpx;  
+}
