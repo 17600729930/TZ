@@ -1,7 +1,6 @@
 // pages/index/index.js
 var _url = require("../../utils/url.js");
 import http from "../../utils/http.js";
-var _openid = "1111111111111";
 // var _uid;
 Page({
 

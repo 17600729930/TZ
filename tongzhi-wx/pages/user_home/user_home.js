@@ -1,4 +1,9 @@
 // pages/index/index.js
+var _url = require("../../utils/url.js");
+import http from "../../utils/http.js";
+let _openid = "";
+var _uid; // 登录用户id
+var userId; // 查看用户id
 Page({
 
   /**
@@ -31,7 +36,9 @@ Page({
       { bindtap: 'Menu2', txt: '举报', url: '../jubao/jubao', },
       { bindtap: 'Menu3', txt: '删除好友', }
     ],
-    menu: ''
+    menu: '',
+    infoArr: [],
+    imgURL: _url.hosURL()
   },
   chosePrice:function(data){
       var that = this;
@@ -103,8 +110,44 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (val) {
+    console.log(val)
+    var that = this;
+    wx.getStorage({
+      key: '_openid',
+      success: function (res) {
+        _openid = res.data;
+        wx.getStorage({
+          key: '_uid',
+          success: function (res) {
+            _uid = res.data;
+            http.POST({
+              url: _url.infoListshow(),
+              params: {
+                openid: _openid,
+                uid: _uid,
+                id: val.userId
+              },
+              success: (res) => {
+                console.log(res.data.data.show)
+                if (res.data.data.show.sex == 1){
+                  res.data.data.show.sex = "男"
+                }else{
+                  res.data.data.show.sex = "女"
+                }
+                // console.log(res.data.data[i].img)
+                if (res.data.data.show.img.indexOf("https://") == -1) {
+                  res.data.data.show.img = _url.hosURL() + "/" + res.data.data.show.img
+                }
+                that.setData({
+                  infoArr: res.data.data.show
+                })
+              }
+            })
+          },
+        })
+      },
+    })
   },
   closeHide: function (e) {
     this.setData({

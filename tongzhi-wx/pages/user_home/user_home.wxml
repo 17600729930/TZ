@@ -20,11 +20,11 @@
             <view class='info_top'>
                 <view class='left'>
                     <view class="name">
-                        <text>一颗海草</text>
+                        <text>{{infoArr.nickname}}</text>
                     </view>
                     <view class='num'>
-                        <text>25岁, </text>
-                        <text> 12345666</text>                       
+                        <text>{{infoArr.age}}岁, </text>
+                        <text>{{infoArr.address}}</text>                       
                     </view>
                 </view>
                 <view class='right'>
@@ -36,30 +36,34 @@
             <view class='info_middle'>
                 <view class='tit'>关于我</view>
                 <view class='about_me'>
-                    <text>168cm,</text>
-                    <text>48kg,</text>
-                    <text>女,</text>
-                    <text>歌手</text>                    
+                    <text>{{infoArr.shengao}},</text>
+                    <text>{{infoArr.tizhong}},</text>
+                    <text>{{infoArr.sex}},</text>
+                    <text>{{infoArr.occupation}}</text>                    
                 </view>
                 <view class='hob'>
-                    <text>吃货</text>
+                  <text>{{infoArr.hobby}}</text>
+                    <!-- <text>吃货</text>
                     <text>旅游</text>
                     <text>唱歌</text>
-                    <text>弹吉他</text>                    
+                    <text>弹吉他</text> -->
                 </view>
                 <view class='plan'>
                     <view class='plan_t'>目标理想及计划</view>
-                    <view class='plan_c'>来一场说走就走的旅行</view>
+                    <view class='plan_c'>{{infoArr.autograph}}</view>
                 </view>
                 <view class='plan'>
                     <navigator url="../find_comment/find_comment" class='plan_t'>动态</navigator>
                     <view class='plan_act'>
                         <swiper class="act_list">
-                            <block wx:for="{{userAct}}">
+                            <!-- <block wx:for="{{userArr.img}}"> -->
+                            <block>
                                 <swiper-item>
-                                    <navigator url='../find_comment/find_comment' class="img_box">
-                                        <image src='{{item.actimg}}'></image>
-                                    </navigator>
+                                <view class="img_box">
+                                    <!-- <navigator url='../find_comment/find_comment' class="img_box"> -->
+                                      <image src='{{infoArr.img}}'></image>
+                                    <!-- </navigator> -->
+                                </view>
                                 </swiper-item>
                             </block>
                         </swiper>
@@ -85,7 +89,7 @@
     </view>
 </view>
 <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
-    <block wx:for-items="{{actionSheetItems}}">
+    <block wx:for="{{actionSheetItems}}" wx:key="{{index}}">
         <navigator url='{{item.url}}'>
             <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
         </navigator>
@@ -100,12 +104,12 @@
                 <form>
                     <view class="top">
                         <image src='../../images/face1.png'></image>
-                        <view class="text">喜欢就赞赏我把!</view>
+                        <view class="text">喜欢就赞赏我吧!</view>
                     </view>
                     <view class="middle">
                         <view class="select_top">
                             <radio-group>
-                                <block wx:for="{{priceAll}}">
+                                <block wx:for="{{priceAll}}" wx:key="{{index}}">
                                     <radio data-select="{{item.id}}" bindtap='chosePrice' class="{{item.id == choseCheck ? 'active':''}}">{{item.chose}}</radio>
                                 </block>
                             </radio-group>  

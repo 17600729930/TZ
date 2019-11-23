@@ -14,27 +14,21 @@
 <!-- 内容列表 -->
 <view class='main'>
   <view class='ul-user'>
-    <block wx:for="{{userlist}}" wx:key="index">
-      <view class='item'>
+    <block wx:for="{{infoList}}" wx:key="index">
+      <view class='item' bindtap="nextXiangxi" id="{{item.id}}">
         <view class='con'>
-          <navigator url="{{item.url}}">
             <view class='face'>
-              <image src="{{item.face}}"></image>
+              <image src="{{item.img}}"></image>
             </view>
-          </navigator>
-          <navigator url="{{item.url}}">
             <view class='txt'>
-              <navigator url="{{item.url}}">
                 <view class='name'>{{item.name}}</view>
-                <view class='tit'>目标理想及计划</view>
-                <view class='plan'>{{item.plan}}</view>
-              </navigator>
+                <view class='tit'>{{item.nickname}}</view>
+                <view class='plan'>{{item.autograph}}</view>
             </view>
-          </navigator>
           <view class='hi'>
-            <navigator url="../talk/talk">
-              <image src='../../images/hi1.png'></image>
-            </navigator>
+            <view>
+              <image bindtap="nextHi" src='../../images/hi1.png'></image>
+            </view>
           </view>
         </view>
       </view>
