@@ -1,7 +1,0 @@
-<view class="video_wrap">
-    <view class="video_box" wx:for="{{videoList}}" wx:key="video">
-        <video src='{{item.src}}' object-fit="cover" controls="true" show-play-btn="false" bindprogress="10%" poster="{{item.postUrl}}"></video>
-        <navigator class='title' url='../video_info/video_info'>{{item.title}}</navigator>
-        <view class='view'>播放次数:{{item.view}}</view>
-    </view>
-</view>
