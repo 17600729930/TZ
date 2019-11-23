@@ -64,7 +64,7 @@ Page({
         success: function (res) {
           // console.log(res.code)
           http.POST({
-            url: _url.shouquan(),
+            url: _url.baseURL.shouquan,
             params: {
               "code": res.code
             },

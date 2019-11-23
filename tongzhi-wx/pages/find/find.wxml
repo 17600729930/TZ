@@ -35,7 +35,7 @@
                 </view>
                 <view class="item_bottom">
                     <swiper class="img_wrap" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">                    
-                        <block wx:for="{{srcUrl}}">
+                        <block wx:for="{{srcUrl}}" wx:key="{{i}}">
                             <swiper-item class="img_box">
                               <view class="">
                                   <image src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
@@ -81,7 +81,7 @@
                     <view class="middle">
                         <view class="select_top">
                             <radio-group>
-                                <block wx:for="{{priceAll}}">
+                                <block wx:for="{{priceAll}}"  wx:key="{{i}}">
                                     <radio data-select="{{item.id}}" bindtap='chosePrice' class="{{item.id == choseCheck ? 'active':''}}">{{item.chose}}</radio>
                                 </block>
                             </radio-group>   
